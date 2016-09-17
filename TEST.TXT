@@ -1,0 +1,18 @@
+ This Line is Condensed
+
+W1 This Line is Double WidthW0
+
+G This is Double Strike H
+
+-1 This is Under Line -0
+
+4 This Line is Italiacs 5
+
+X  12 CPI + Condensed = 20 CPI  Y
+
+W1 Double Width Condensed W0
+
+M 12 CPI P
+
+
+
