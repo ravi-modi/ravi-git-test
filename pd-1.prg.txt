@@ -1,0 +1,21 @@
+static function JVI1_ACC()
+LOCAL mkey, mrecno(), mOK
+
+mOK := .t.
+mrecno = recno()
+mkey = JOUR->(COCD+DOCCD+DOCNO)
+SET ORDER TO 1
+SEEK mkey
+do while JOUR->(COCD+DOCCD+DOCNO) = mkey .and. !eof()
+   if JOUR->ACCOUNT = [E11  ]
+      mok := .f.
+      exit
+   endif
+   skip 1
+enddo
+SET ORDER TO 2
+GO mkey
+
+return mOK
+
+   
